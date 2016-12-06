@@ -8,9 +8,9 @@ Problem:
 - Lower bound: -530.0
   Upper bound: -530.0
   Number of objectives: 1
-  Number of constraints: 10
-  Number of variables: 7
-  Number of nonzeros: 19
+  Number of constraints: 7
+  Number of variables: 16
+  Number of nonzeros: 25
   Sense: minimize
 # ----------------------------------------------------------
 #   Solver Information
@@ -19,7 +19,7 @@ Solver:
 - Status: ok
   Termination condition: optimal
   Error rc: 0
-  Time: 0.00380611419678
+  Time: 0.00371503829956
 # ----------------------------------------------------------
 #   Solution Information
 # ----------------------------------------------------------
@@ -33,22 +33,22 @@ Solution:
     OBJ:
       Value: -530
   Variable:
-    y[1]:
-      Value: -1
-    y[2]:
-      Value: -1
-    y[3]:
-      Value: -1
+    x[13]:
+      Value: 40
+    x[3]:
+      Value: 40
+    x[4]:
+      Value: 110
+    x[5]:
+      Value: 30
+    x[6]:
+      Value: 40
+    x[8]:
+      Value: 60
   Constraint:
     AxbConstraint[1]:
-      Dual: 150
+      Dual: -1
     AxbConstraint[2]:
-      Dual: 25
+      Dual: -1
     AxbConstraint[3]:
-      Dual: 6.25
-    AxbConstraint[5]:
-      Dual: 5
-    AxbConstraint[6]:
-      Dual: 73.75
-    AxbConstraint[8]:
-      Dual: 60
+      Dual: -1

@@ -6,28 +6,30 @@ from pyomo.environ import *
 
 model = AbstractModel()
 
-model.m = Param(within=NonNegativeIntegers)
-model.n = Param(within=NonNegativeIntegers)
+model.m = Param(within=NonNegativeIntegers) # Number of queries
+model.n = Param(within=NonNegativeIntegers) # Number of companies
 
 model.Ia = RangeSet(1, model.m+model.n)
-model.Ja = RangeSet(1, model.m*model.n)
+model.Ja = RangeSet(1, (model.m*model.n) + (model.m+model.n))
+model.I = RangeSet(1,model.n)
+model.J = RangeSet(1,model.m)
 
 model.a = Param(model.Ia, model.Ja)
-model.ba = Param(model.Ia)
-model.ca = Param(model.Ja)
+model.b=Param(model.Ia) #Budget
+model.r = Param(model.Ja)
 
-# the next line declares a variable indexed by the set J
 model.x = Var(model.Ja, domain=NonNegativeReals)
 
 def obj_expression(model):
-    return summation(model.ca, model.x)
+    return summation(model.r, model.x)
 
 #std form - minimize
 model.OBJ = Objective(rule=obj_expression)
 
+
 def ax_constraint_rule(model, i):
     # return the expression for the constraint for i
-    return sum(model.a[i,j] * model.x[j] for j in model.Ja) == model.ba[i]
+    return sum(model.a[i,j] * model.x[j] for j in model.Ja) == model.b[i]
 
 # the next line creates one constraint for each member of the set model.I
 model.AxbConstraint = Constraint(model.Ia, rule=ax_constraint_rule)
