@@ -5,12 +5,12 @@
 #   Problem Information
 # ----------------------------------------------------------
 Problem: 
-- Lower bound: -530.0
-  Upper bound: -530.0
+- Lower bound: -1340.0
+  Upper bound: -1340.0
   Number of objectives: 1
-  Number of constraints: 16
-  Number of variables: 7
-  Number of nonzeros: 25
+  Number of constraints: 121
+  Number of variables: 21
+  Number of nonzeros: 221
   Sense: maximize
 # ----------------------------------------------------------
 #   Solver Information
@@ -19,7 +19,7 @@ Solver:
 - Status: ok
   Termination condition: optimal
   Error rc: 0
-  Time: 0.00365781784058
+  Time: 0.00517201423645
 # ----------------------------------------------------------
 #   Solution Information
 # ----------------------------------------------------------
@@ -31,24 +31,66 @@ Solution:
   Message: None
   Objective:
     OBJ:
-      Value: -530
+      Value: -1340
   Variable:
+    y[10]:
+      Value: -1
     y[1]:
       Value: -1
     y[2]:
       Value: -1
     y[3]:
       Value: -1
+    y[4]:
+      Value: -1
+    y[5]:
+      Value: -1
+    y[6]:
+      Value: -1
+    y[7]:
+      Value: -1
+    y[8]:
+      Value: -1
+    y[9]:
+      Value: -1
   Constraint:
-    AxbConstraint[14]:
-      Dual: 10
-    AxbConstraint[1]:
-      Dual: 150
-    AxbConstraint[3]:
-      Dual: 10
-    AxbConstraint[5]:
-      Dual: 20
-    AxbConstraint[6]:
-      Dual: 70
-    AxbConstraint[8]:
-      Dual: 60
+    AxbConstraint[10]:
+      Dual: 152.701
+    AxbConstraint[111]:
+      Dual: 102.358
+    AxbConstraint[116]:
+      Dual: 149
+    AxbConstraint[117]:
+      Dual: 16.0879
+    AxbConstraint[15]:
+      Dual: 40.6897
+    AxbConstraint[27]:
+      Dual: 99.0706
+    AxbConstraint[28]:
+      Dual: 89.7647
+    AxbConstraint[38]:
+      Dual: 88.2353
+    AxbConstraint[44]:
+      Dual: 20.4545
+    AxbConstraint[53]:
+      Dual: 187
+    AxbConstraint[59]:
+      Dual: 28.4
+    AxbConstraint[64]:
+      Dual: 76.5455
+    AxbConstraint[69]:
+      Dual: 19.4836
+    AxbConstraint[71]:
+      Dual: 15.1293
+    AxbConstraint[72]:
+      Dual: 163
+    AxbConstraint[79]:
+      Dual: 64.1164
+    AxbConstraint[7]:
+      Dual: 11.8415
+    AxbConstraint[85]:
+      Dual: 151.31
+    AxbConstraint[90]:
+      Dual: 34.2989
+    AxbConstraint[91]:
+      Dual: 50.5128

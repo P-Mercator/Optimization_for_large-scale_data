@@ -15,7 +15,7 @@ model.I = RangeSet(1,model.n)
 model.J = RangeSet(1,model.m)
 
 model.a = Param(model.Ia, model.Ja)
-model.b=Param(model.Ia) #Budget
+model.b = Param(model.Ia) #Budget
 model.c = Param(model.Ja)
 
 model.x = Var(model.Ja, domain=NonNegativeReals)
