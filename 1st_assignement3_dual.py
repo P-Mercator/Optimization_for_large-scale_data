@@ -27,7 +27,7 @@ model.OBJ = Objective(rule=obj_expression, sense = maximize)
 #access the matrix does the trick
 def ax_constraint_rule(model, j):
     # return the expression for the constraint for i
-    return sum(model.a[i,j] * model.y[i] for i in model.Ia) >= model.c[j]
+    return sum(model.a[i,j] * model.y[i] for i in model.Ia) <= model.c[j]
 
 # the next line creates one constraint for each member of the set model.I
 model.AxbConstraint = Constraint(model.Ja, rule=ax_constraint_rule)

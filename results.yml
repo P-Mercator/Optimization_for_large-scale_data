@@ -5,8 +5,8 @@
 #   Problem Information
 # ----------------------------------------------------------
 Problem: 
-- Lower bound: -inf
-  Upper bound: inf
+- Lower bound: -530.0
+  Upper bound: -530.0
   Number of objectives: 1
   Number of constraints: 16
   Number of variables: 7
@@ -17,20 +17,38 @@ Problem:
 # ----------------------------------------------------------
 Solver: 
 - Status: ok
-  Termination condition: unknown
+  Termination condition: optimal
   Error rc: 0
-  Time: 0.00417017936707
+  Time: 0.00365781784058
 # ----------------------------------------------------------
 #   Solution Information
 # ----------------------------------------------------------
 Solution: 
 - number of solutions: 1
   number of solutions displayed: 1
-- Gap: None
-  Status: infeasible
+- Gap: 0.0
+  Status: optimal
   Message: None
   Objective:
     OBJ:
-      Value: 0
-  Variable: No nonzero values
-  Constraint: No nonzero values
+      Value: -530
+  Variable:
+    y[1]:
+      Value: -1
+    y[2]:
+      Value: -1
+    y[3]:
+      Value: -1
+  Constraint:
+    AxbConstraint[14]:
+      Dual: 10
+    AxbConstraint[1]:
+      Dual: 150
+    AxbConstraint[3]:
+      Dual: 10
+    AxbConstraint[5]:
+      Dual: 20
+    AxbConstraint[6]:
+      Dual: 70
+    AxbConstraint[8]:
+      Dual: 60
