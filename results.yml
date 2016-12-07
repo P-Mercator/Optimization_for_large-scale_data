@@ -5,50 +5,32 @@
 #   Problem Information
 # ----------------------------------------------------------
 Problem: 
-- Lower bound: -530.0
-  Upper bound: -530.0
+- Lower bound: -inf
+  Upper bound: inf
   Number of objectives: 1
-  Number of constraints: 7
-  Number of variables: 16
+  Number of constraints: 16
+  Number of variables: 7
   Number of nonzeros: 25
-  Sense: minimize
+  Sense: maximize
 # ----------------------------------------------------------
 #   Solver Information
 # ----------------------------------------------------------
 Solver: 
 - Status: ok
-  Termination condition: optimal
+  Termination condition: unknown
   Error rc: 0
-  Time: 0.00371503829956
+  Time: 0.00417017936707
 # ----------------------------------------------------------
 #   Solution Information
 # ----------------------------------------------------------
 Solution: 
 - number of solutions: 1
   number of solutions displayed: 1
-- Gap: 0.0
-  Status: optimal
+- Gap: None
+  Status: infeasible
   Message: None
   Objective:
     OBJ:
-      Value: -530
-  Variable:
-    x[13]:
-      Value: 40
-    x[3]:
-      Value: 40
-    x[4]:
-      Value: 110
-    x[5]:
-      Value: 30
-    x[6]:
-      Value: 40
-    x[8]:
-      Value: 60
-  Constraint:
-    AxbConstraint[1]:
-      Dual: -1
-    AxbConstraint[2]:
-      Dual: -1
-    AxbConstraint[3]:
-      Dual: -1
+      Value: 0
+  Variable: No nonzero values
+  Constraint: No nonzero values

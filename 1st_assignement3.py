@@ -16,12 +16,12 @@ model.J = RangeSet(1,model.m)
 
 model.a = Param(model.Ia, model.Ja)
 model.b=Param(model.Ia) #Budget
-model.r = Param(model.Ja)
+model.c = Param(model.Ja)
 
 model.x = Var(model.Ja, domain=NonNegativeReals)
 
 def obj_expression(model):
-    return summation(model.r, model.x)
+    return summation(model.c, model.x)
 
 #std form - minimize
 model.OBJ = Objective(rule=obj_expression)

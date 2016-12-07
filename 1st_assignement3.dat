@@ -3,7 +3,7 @@
 param n :=3; #Companies
 param m :=3; #Queries
     
-param r := #revenue - as negative for the std form
+param c := #revenue - as negative for the std form
     1 -1
     2 -0.75
     3 -5
